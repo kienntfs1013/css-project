@@ -401,6 +401,7 @@ body
 
 .main .sidebar .info
 {
+    margin-top: 10px;
     width: 260px;
     height: 60px;
     display: flex;
@@ -449,6 +450,7 @@ body
 
 .main .sidebar .text
 {
+    margin-top: 15px;
     width: 260px;
     height: 40px;
     display: flex;
