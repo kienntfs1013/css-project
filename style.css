@@ -78,11 +78,80 @@ body
 .main .content .story
 {
     width: 612px;
-    height: 84px;
+    height: 90px;
+    background-color: #FFF;
     border: 1px solid rgb(158, 156, 156);
     border-radius: 5px;
     margin-top: 30px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .content .story .list
+{
+    width: 80px;
+    height: 90px;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .story .list .avatar
+{
+    margin-top: 35px;
+    margin-left: 70px;
+    margin-bottom: 2px;
+    transform: translate(-50%,-50%);
+    width: 70px;
+    height: 70px;
+}
+
+.main .content .story .list .avatar img 
+{
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main .content .story .list .avatar svg 
+{
+    fill:none;
+    stroke:#8a3ab8;
+    stroke-width:3px;
+    stroke-dasharray:1;
+    stroke-dashoffset:0;
+    stroke-linecap:round;
+    animation:loading 4500ms ease-in-out infinite alternate;
+}
+
+.main .content .story .list .name
+{
+    font-size: 12px;
+    margin-top: -38px;
+}
+
+.main .content .story .list .name a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+@keyframes loading 
+{
+    100% 
+    {
+        stroke:#cd476b;
+        stroke-dasharray:10;
+        transform:rotate(200deg);
+    }
 }
 
 .main .content .post
@@ -118,6 +187,12 @@ body
     align-items: center;
 }
 
+.main .content .post .header .header-1 .name a
+{
+    text-decoration: none;
+    color: #000;
+}
+
 .main .content .post .header .header-1 .avatar
 {
     width: 40px;
@@ -128,10 +203,12 @@ body
     margin-left: 10px;
 }
 
-.main .content .post .header .header-2
+.main .content .post .header .header-2 a
 {
     font-size: 14px;
     margin-right: 10px;
+    text-decoration: none;
+    color: #000;
 }
 
 .main .content .post .image
