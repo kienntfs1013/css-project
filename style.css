@@ -1,5 +1,6 @@
 body
 {
+    font-size: 14px;
     font-family: sans-serif;
     background-color: rgb(236, 235, 235);
     margin: 0;
@@ -189,6 +190,8 @@ body
 
 .main .content .post .header .header-1 .name a
 {
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
     color: #000;
 }
@@ -268,6 +271,8 @@ body
 
 .main .content .post .info .views
 {
+    font-size: 14px;
+    font-weight: bold;
     margin-left: 20px;
 }
 
@@ -276,9 +281,13 @@ body
     margin-left: 20px;
 }
 
+.main .content .post .info .title .name
+{
+    font-weight: bold;
+}
+
 .main .content .post .info .title .content
 {
-    color: rgb(92, 92, 92);
     margin-left: 1px;
 }
 
@@ -289,6 +298,7 @@ body
 
 .main .content .post .info .comments a
 {
+    font-weight: bold;
     text-decoration: none;
     color: rgb(158, 156, 156);
 }
@@ -308,6 +318,8 @@ body
 
 .main .content .post .info .user .left a
 {
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
     color: #000;
 }
@@ -374,4 +386,167 @@ body
     margin-right: 20px;
     color: rgb(53, 145, 231);
     text-decoration: none;
+}
+
+.main .sidebar
+{
+    position: fixed;
+    width: 260px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 669px;
+}
+
+.main .sidebar .info
+{
+    width: 260px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .sidebar .info .avatar
+{
+    width: 50px;
+    height: 50px;
+    background-image: url("https://i.im.ge/2021/09/01/Q1mpV1.png");
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.main .sidebar .info .name
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main .sidebar .info .name a
+{
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.main .sidebar .info .name .fullName
+{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+.main .sidebar .info .switch a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(53, 145, 231);
+}
+
+.main .sidebar .text
+{
+    width: 260px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .sidebar .text .text-1
+{
+    font-weight: bold;
+    color: rgb(158, 156, 156);
+}
+
+.main .sidebar .text a
+{
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+
+.main .sidebar .suggestions
+{
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .sidebar .suggestions .info
+{
+    width: 260px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .sidebar .suggestions .info .avatar
+{
+    width: 40px;
+    height: 40px;
+    background-image: url("https://i.im.ge/2021/09/01/Q1mpV1.png");
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.main .sidebar .suggestions .info .name
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main .sidebar .suggestions .info .name a:hover
+{
+    text-decoration: underline;
+}
+
+.main .sidebar .suggestions .info .name .name-1
+{
+    font-size: 12px;
+    color: rgb(158, 156, 156);
+}
+
+.main .sidebar .suggestions .info .follow a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(53, 145, 231);
+}
+
+.main .sidebar .info
+{
+    width: 260px;
+    height: 40px;
+}
+
+.main .sidebar .info a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(158, 156, 156);
+}
+
+.main .sidebar .copyright
+{
+    width: 260px;
+    height: 40px;
+}
+
+.main .sidebar .copyright a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(158, 156, 156);
 }
